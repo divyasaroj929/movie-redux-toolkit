@@ -10,7 +10,6 @@ import { APIKey } from "../../common/api/MovieApiKey";
 import movieApi from "../../common/api/movieApi";
 const Home = () => {
   const dispatch = useDispatch();
-
   const movieText = "Harry";
   const seriesText = "Friends";
   useEffect(() => {

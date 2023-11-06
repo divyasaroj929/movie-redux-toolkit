@@ -11,24 +11,24 @@ import movieApi from "./common/api/movieApi";
 import "./App.css";
 
 function App() {
-  useEffect(() => {
-    const fetchMovie = async () => {
-      const response = await movieApi
-        .get(`?apikey=${APIKey}&i=${`tt0144701`}&plot=full`)
-        .catch((err) => {
-          console.log(err, "err");
-        });
-      console.log(response, "appresponce");
-    };
-    fetchMovie();
-  }, []);
+  // useEffect(() => {
+  //   const fetchMovie = async () => {
+  //     const response = await movieApi
+  //       .get(`?apikey=${APIKey}&i=${`tt0144701`}&plot=full`)
+  //       .catch((err) => {
+  //         console.log(err, "err");
+  //       });
+  //     console.log(response, "appresponce");
+  //   };
+  //   fetchMovie();
+  // }, []);
   return (
     <>
       <div className="overflow-y-auto ">
         <Header />
         <div className="no-scrollbar">
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route exact path="/" element={<Home />} />
             <Route path="/Movie/:imdbID" element={<MovieDetail />} />
             <Route element={<PageNotFound />} />
           </Routes>
