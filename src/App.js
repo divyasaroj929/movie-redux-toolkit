@@ -28,7 +28,7 @@ function App() {
         <Header />
         <div className="no-scrollbar">
           <Routes>
-            <Route exact path="/" element={<Home />} />
+            <Route exact path="/movie-redux-toolkit" element={<Home />} />
             <Route path="/Movie/:imdbID" element={<MovieDetail />} />
             <Route element={<PageNotFound />} />
           </Routes>
