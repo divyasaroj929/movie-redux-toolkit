@@ -5,13 +5,13 @@ import { useSelector } from "react-redux";
 import { getAllMovies, getAllShows } from "../../features/movies/movieSilce";
 import MovieCard from "../MovieCard/MovieCard";
 const MovieListing = () => {
-  const Settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 2,
-  };
+  // const Settings = {
+  //   dots: false,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: 4,
+  //   slidesToScroll: 2,
+  // };
   const movies = useSelector(getAllMovies);
   const shows = useSelector(getAllShows);
 

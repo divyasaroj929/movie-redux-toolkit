@@ -24,7 +24,7 @@ const Header = () => {
   };
   return (
     <>
-      <div className="header w-[full] h-[4.2rem]  sticky top-[0] z-[1000] flex justify-between items-center bg-[#0f171e] ">
+      <div className="header w-[full] h-[4.2rem]  sticky top-[0] z-[1000] flex justify-between items-center bg-[#0f171e] lg:w-[full] h-[4.2rem]  sticky top-[0] z-[1000] flex justify-between items-center bg-[#0f171e]  ">
         <div
           className="logo text-[1.3rem] font-medium text-[#ffff] "
           onClick={changeHomeLink}

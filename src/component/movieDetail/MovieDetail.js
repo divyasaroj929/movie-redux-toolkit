@@ -20,25 +20,13 @@ const MovieDetail = () => {
   }, [dispatch, imdbID]);
   return (
     <>
-      <div
-        className="movie-section flex justify-evenly p-[4rem]  text-[#fffff]-400  "
-        // style={{
-        //   display: "flex",
-        //   justifyContent: "space-evenly",
-        //   padding: "40px 0px",
-        //   color: "#ffff",
-        //   fontWeight: "400",
-        // }}
-      >
+      <div className="movie-section flex justify-evenly p-[2rem]  text-[#fffff]-400">
         {Object.keys(data).length === 0 ? (
           <div>...loading</div>
         ) : (
           <>
             <div className="section-left">
-              <div
-                className="movie-title text-[30rem]-[#ffff] "
-                // style={{ fontSize: "40px", color: "#ffff" }}
-              >
+              <div className="movie-title text-[30rem]-[#ffff]">
                 {data.Title}
               </div>
               <div

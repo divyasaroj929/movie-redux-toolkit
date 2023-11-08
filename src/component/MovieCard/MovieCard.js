@@ -11,19 +11,19 @@ const MovieCard = (props) => {
   };
 
   return (
-    <div className=" flex justify-center">
-      <div className="hover:scale-[1.1]  h-full w-[9rem] min-h-[20rem] m-[2rem] transition-transform duration-500 bg-[#0f171e] cursor-pointer ">
-        <Link to={`/Movie/${data.imdbID}`}>
-          <div className="card-top h-[10rem] relative w-full  ">
-            <img src={data.Poster} alt={data.Title} />
-          </div>
-          <div className="card-info text-[#ffff] mt-[1rem] p-[1rem] text-[.8rem]">
-            <h4 className="mb-[.5rem] break-words pt-[20px]">{data.Title}</h4>
-            <p className="text-[1rem] mb-[0.5rem]">{data.Year}</p>
-          </div>
-        </Link>
-      </div>
+    // <div className=" flex justify-center">/
+    <div className="hover:scale-[1.1]  h-full  min-h-[30rem] m-[1rem] p-[rem] transition-transform duration-500 bg-[#0f171e] cursor-pointer w-[18rem]">
+      <Link to={`/Movie/${data.imdbID}`}>
+        <div className="card-top h-[20rem] relative w-full flex justify-center">
+          <img src={data.Poster} alt={data.Title} />
+        </div>
+        <div className="card-info text-[#ffff] p-[1rem] text-[1.4rem]">
+          <h4 className="mb-[1rem] break-words">{data.Title}</h4>
+          <p className="text-[1.2rem] mb-[1rem]">{data.Year}</p>
+        </div>
+      </Link>
     </div>
+    // </div>
   );
 };
 
