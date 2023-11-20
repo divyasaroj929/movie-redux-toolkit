@@ -7,6 +7,7 @@ import MovieDetail from "./component/movieDetail/MovieDetail";
 import PageNotFound from "./component/PageNotFound/PageNotFound";
 import { APIKey } from "./common/api/MovieApiKey";
 import movieApi from "./common/api/movieApi";
+import { API_Key, API_URL } from "./common/api/MovieApiKey";
 
 import "./App.css";
 
@@ -14,7 +15,7 @@ function App() {
   // useEffect(() => {
   //   const fetchMovie = async () => {
   //     const response = await movieApi
-  //       .get(`?apikey=${APIKey}&i=${`tt0144701`}&plot=full`)
+  //       .get(`?apikey=${API_Key}&i=${`tt0144701`}&plot=full`)
   //       .catch((err) => {
   //         console.log(err, "err");
   //       });
@@ -22,6 +23,7 @@ function App() {
   //   };
   //   fetchMovie();
   // }, []);
+
   return (
     <>
       <div className="overflow-y-auto ">
