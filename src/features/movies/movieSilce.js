@@ -7,12 +7,24 @@ export const fetchAsyncMovies = createAsyncThunk(
     try {
       console.log(API_KEY, API_URL);
       // https://www.omdbapi.com/?i=tt0144701&apikey=3aef2d21&s=Harry&type=movie/// carrot api here
-      const resp = await fetch(
-        `${API_URL}?i=tt0144701&apiKey=3aef2d21&s=${text}&type=movie`,
-        // `${API_URL}?i=tt0144701&apiKey=${API_KEY}&s=${text}&type=movie`,
-        // `${API_URL}?i=tt0144701&apikey=3aef2d21&s=${text}&type=movie`,
-        { method: "GET" }
-      );
+
+      console.log("API_KEY:", API_KEY);
+      const url = `${API_URL}?i=tt0144701&apiKey=${API_KEY}&s=${text}&type=movie`;
+      console.log("API_URL:", url);
+
+      const resp = await fetch(url, { method: "GET" });
+
+      // start check api
+
+      // const resp = await fetch(
+      //   // `${API_URL}?i=tt0144701&apiKey=3aef2d21&s=${text}&type=movie`,
+
+      //   `${API_URL}?i=tt0144701&apiKey=${API_KEY}&s=${text}&type=movie`,
+
+      //   // `${API_URL}?i=tt0144701&apikey=3aef2d21&s=${text}&type=movie`,
+      //   { method: "GET" }
+      // );
+      // end check api
 
       const finalResult = await resp.json();
       console.log(resp);

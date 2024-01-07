@@ -12,9 +12,9 @@ const MovieCard = (props) => {
 
   return (
     // <div className=" flex justify-center">/
-    <div className="hover:scale-[1.1]  h-full  min-h-[30rem] m-[1rem] p-[rem] transition-transform duration-500 bg-[#0f171e] cursor-pointer w-[18rem]">
+    <div className="hover:scale-[1.1]  h-full  min-h-[20rem] m-2  p-[rem] transition-transform duration-500 bg-[#0f171e] cursor-pointer ">
       <Link to={`/Movie/${data.imdbID}`}>
-        <div className="card-top h-[20rem] relative w-full flex justify-center">
+        <div className="card-top h-[10rem] relative w-full flex justify-center">
           <img src={data.Poster} alt={data.Title} />
         </div>
         <div className="card-info text-[#ffff] p-[1rem] text-[1.4rem]">
